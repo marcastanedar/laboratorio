@@ -1,10 +1,12 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
+import Navbar from "./components/navbar";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <header className={styles.header}>
+      <Navbar></Navbar>
+      <header id="header" className={styles.header}>
         <div>
           <h1>
             <span>
@@ -19,7 +21,7 @@ export default function Home() {
           </h1>
         </div>
       </header>
-      <section className={styles.infoSection}>
+      <section id="inf" className={styles.infoSection}>
         <img
         src="/la joven de la perla2.jpg"
         alt="Imagen"
